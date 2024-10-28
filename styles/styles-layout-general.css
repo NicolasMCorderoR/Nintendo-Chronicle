@@ -18,7 +18,7 @@ header {
     justify-content: center;
 }
 
-#container-navbar {
+#navbar-container {
     width: 100%;
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@ header {
     padding: 0 1em;
 }
 
-#container-image-title {
+#image-title-container {
     width: 25%;
     display: flex;
     align-items: center;
@@ -48,7 +48,7 @@ header {
     padding: 0.1em;
 }
 
-#container-list-nav {
+#list-nav-container {
     list-style: none;
     display: flex;
     gap: 1.5em;
@@ -80,13 +80,13 @@ footer {
     justify-content: center;
 }
 
-#container-footer {
+#footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#container-list-social {
+#list-social-container {
     display: flex;
     gap: 1.5em;
 }
