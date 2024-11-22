@@ -5,11 +5,7 @@
     padding: 2em;
 }
 
-#intro-container {
-    text-align: center;
-}
-
-#table-curiosities {
+#table-data-container {
     display: grid;
     justify-items: center;
 }
@@ -22,7 +18,8 @@
 }
 
 #curiosity-table caption {
-    font-size: 1.5em;
+    font-weight: bold;
+    font-size: 1.1rem;
     margin-bottom: 1em;
 }
 
@@ -37,15 +34,19 @@
     background-color: #f4f4f4;
 }
 
-#images-section {
+#image-logo-curiosities {
     display: flex;
-    justify-content: space-between;
-    gap: 1em;
+    justify-content: space-evenly;
 }
 
 .curiosity-figure {
     width: 45%;
     text-align: center;
+}
+
+.curiosity-figure img,
+.curiosity-figure svg {
+    width: min-content;
 }
 
 #map-location {
