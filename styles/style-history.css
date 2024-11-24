@@ -1,92 +1,82 @@
-/* Estilos Generales */
 main {
-  font-family: 'Press Start 2P', cursive; /* Fuente retro similar a la de Nintendo */
-  padding: 40px; /* Espaciado general en todas las direcciones */
-  background-color: #F4F1F1; /* Fondo pastel suave, tono claro */
-  color: #333; /* Color de texto oscuro para buen contraste */
-  font-size: 0.9rem; /* Tamaño reducido para todo el contenido dentro de main */
+  font-family: 'Press Start 2P', cursive;
+  padding: 40px;
+  background-color: #F4F1F1;
+  color: #333;
+  font-size: 0.9rem;
 }
 
-/* Contenedor principal */
 #main-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2em;
-  padding: 0; /* Sin espaciado adicional */
-  width: 100%; /* Ocupar el 100% del ancho disponible */
-  max-width: none; /* No se limita el ancho */
+  padding: 0;
+  width: 100%;
+  max-width: none;
 }
 
 #intro-container {
   grid-column: 1 / -1;
-  flex-direction: column; /* Asegura que el contenido esté alineado verticalmente */
-  justify-content: center; /* Centra el contenido verticalmente */
+  width: 100%;
 }
 
 #intro-container h1 {
-  font-size: 32px; /* Un tamaño más grande que el de h2, pero no excesivo */
-  font-weight: bold; /* Mantener el texto en negrita */
-  color: #333; /* Color de texto oscuro */
-  margin-bottom: 20px; /* Espacio debajo del título */
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-
-
-/* Contenedor de la historia */
 #story-container {
-  grid-column: 1 / -1; /* Ocupa todo el ancho de la pantalla */
+  grid-column: 1 / -1;
   width: 100%;
   margin: 0 auto;
 }
 
-/* Estilo de los párrafos */
 .intro-paragraph {
-  margin-bottom: 20px; /* Aumento del espaciado entre párrafos */
+  margin-bottom: 20px;
   line-height: 1.6;
   text-align: left;
-  font-size: 0.9rem; /* Reducir el tamaño de fuente de los párrafos */
+  font-size: 0.9rem;
 }
 
-/* Contenedor de las imágenes (top) */
 #image-logo-history-top {
   grid-column: 1 / -1;
   display: flex;
-  justify-content: space-between; /* Distribuye el espacio entre los elementos, una a la izquierda y otra a la derecha */
-  align-items: center; /* Centra las imágenes verticalmente */
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  gap: 1.5em; /* Espacio entre las imágenes */
+  gap: 1.5em;
 }
 
-
-/* Contenedor de la tabla */
 #table-data-container {
-  grid-column: 1 / 4; /* Ocupa dos columnas en el grid */
+  grid-column: 1 / 4;
+  margin-top: 3em;
   display: flex;
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  gap: 2em; /* Espacio entre la tabla y cualquier otro contenido en la fila */
+  gap: 2em;
 }
 
-/* Estilos de la tabla */
 #history-table {
   width: 100%;
-  max-width: 600px; /* Limita el ancho de la tabla */
+  max-width: 600px;
   border-collapse: collapse;
-  font-size: 0.8rem; /* Tamaño de la fuente reducido en la tabla */
+  font-size: 0.8rem;
   text-align: center;
 }
 
 #history-table caption {
   font-weight: bold;
-  font-size: 1rem; /* Reducir el tamaño del texto del caption */
+  font-size: 1rem;
   margin-bottom: 0.5em;
 }
 
 #history-table th,
 #history-table td {
   padding: 1em;
-  border: 2px solid #ddd; /* Borde más grueso */
+  border: 2px solid #ddd;
 }
 
 #history-table thead {
@@ -97,46 +87,35 @@ main {
   background-color: #f2f2f2;
 }
 
-/* Contenedor de imágenes (bottom) */
 #image-logo-history-botton {
-  grid-column: 4 / 6; /* Ocupa la última columna en el grid */
+  grid-column: 4 / 6;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
+  justify-content: center;
+  align-items: flex-start;
   gap: 1.5em;
 }
 
-/* Contenedor de las imágenes con bordes decorativos */
 .history-figure {
   width: 75%;
   text-align: center;
-
-  /* Fondo gris pastel */
   background-color: #ECECEC;
-
-  /* Borde decorativo */
-  border: 4px dashed #B0B0B0; /* Borde gris claro, estilo punteado */
-  border-radius: 12px; /* Bordes redondeados para suavizar el diseño */
-
-  /* Espaciado interno para separar imágenes del borde */
+  border: 4px dashed #B0B0B0;
+  border-radius: 12px;
   padding: 10px;
-
-  /* Sombra sutil */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .history-figure img,
 .history-figure svg {
-  width: 100%; /* Las imágenes ocupan el 100% del ancho disponible */
-  max-width: 300px; /* Limita el ancho máximo */
-  max-height: 200px; /* Limita la altura máxima */
-  object-fit: contain; /* Asegura que las proporciones de la imagen se mantengan */
+  width: 100%;
+  max-width: 300px;
+  max-height: 200px;
+  object-fit: contain;
 }
 
-/* Contenedor del mapa */
 #map-location {
-  grid-column: 1 / -1; /* Ocupa todo el ancho de la pantalla */
+  grid-column: 1 / 4;
   display: flex;
   justify-content: center;
   margin-top: 3em;
@@ -144,8 +123,36 @@ main {
 }
 
 #map-location iframe {
-  width: 80%; /* El mapa ocupa el 80% del ancho disponible */
+  width: 80%;
   height: 400px;
   border: 2px solid #ddd;
   border-radius: 8px;
+}
+
+#map-loct-svg {
+  grid-column: 4/-1;
+}
+
+svg {
+  background-color: #A7D8FF;
+  border: 4px dashed #B0B0B0;
+  border-radius: 12px;
+}
+
+#JP-26 {
+  fill: rgb(84, 0, 0);
+}
+
+#JP-26:hover {
+  fill: rgb(255, 255, 255);
+  stroke: black;
+  stroke-width: 1;
+  animation: destacado 5s forwards;
+}
+
+@keyframes destacado {
+  50% {
+    transform: translateY(-150px);
+    transform: scale(300px);
+  }
 }
