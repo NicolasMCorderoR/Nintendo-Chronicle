@@ -1,0 +1,158 @@
+main {
+  font-family: 'Press Start 2P', cursive;
+  padding: 40px;
+  background-color: #F4F1F1;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+#main-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2em;
+  padding: 0;
+  width: 100%;
+  max-width: none;
+}
+
+#intro-container {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+#intro-container h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#story-container {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.intro-paragraph {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+#image-logo-history-top {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1.5em;
+}
+
+#table-data-container {
+  grid-column: 1 / 4;
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2em;
+}
+
+#history-table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+#history-table caption {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+}
+
+#history-table th,
+#history-table td {
+  padding: 1em;
+  border: 2px solid #ddd;
+}
+
+#history-table thead {
+  background-color: #f7f7f7;
+}
+
+#history-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#image-logo-history-botton {
+  grid-column: 4 / 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5em;
+}
+
+.history-figure {
+  width: 75%;
+  text-align: center;
+  background-color: #ECECEC;
+  border: 4px dashed #B0B0B0;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.history-figure img,
+.history-figure svg {
+  width: 100%;
+  max-width: 300px;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+#map-location {
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  width: 100%;
+}
+
+#map-location iframe {
+  width: 80%;
+  height: 400px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+#map-loct-svg {
+  grid-column: 4/-1;
+}
+
+svg {
+  background-color: #A7D8FF;
+  border: 4px dashed #B0B0B0;
+  border-radius: 12px;
+}
+
+#JP-26 {
+  fill: rgb(84, 0, 0);
+}
+
+#JP-26:hover {
+  fill: rgb(255, 255, 255);
+  stroke: black;
+  stroke-width: 1;
+  animation: destacado 5s forwards;
+}
+
+@keyframes destacado {
+  50% {
+    transform: translateY(-150px);
+    transform: scale(300px);
+  }
+}
