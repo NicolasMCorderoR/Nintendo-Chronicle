@@ -157,8 +157,15 @@ main {
 }
 
 @keyframes moverY {
+  0% {
+    transform: scale(1);
+  }
+
   50% {
-    transform: translateY(-150px);
-    transform: scale(300px);
+    transform: scale(3);
+  }
+
+  100% {
+    transform: translate(0px) scale(1);
   }
 }
