@@ -1,6 +1,5 @@
 main {
   font-family: 'Press Start 2P', cursive;
-  padding: 40px;
   background-color: #F4F1F1;
   color: #333;
   font-size: 0.9rem;
@@ -10,7 +9,7 @@ main {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2em;
-  padding: 0;
+  padding: 0%;
   width: 100%;
   max-width: none;
 }
@@ -125,11 +124,9 @@ main {
   width: 100%;
 }
 
-
 #map-location iframe {
   width: 95%;
   height: 400px;
-  border: 2px solid #ddd;
   border-radius: 8px;
 }
 
@@ -142,24 +139,24 @@ main {
   margin-bottom: 8px;
 }
 
-svg {
+#svg-loct-kyoto {
   background-color: #A7D8FF;
   border: 4px dashed #B0B0B0;
   border-radius: 12px;
 }
 
-#JP-26 {
+#svg_loct_kyoto {
   fill: rgb(84, 0, 0);
 }
 
-#JP-26:hover {
+#svg_loct_kyoto:hover {
   fill: rgb(255, 255, 255);
   stroke: black;
   stroke-width: 1;
-  animation: destacado 1s forwards;
+  animation: moverY 1s forwards;
 }
 
-@keyframes destacado {
+@keyframes moverY {
   50% {
     transform: translateY(-150px);
     transform: scale(300px);
