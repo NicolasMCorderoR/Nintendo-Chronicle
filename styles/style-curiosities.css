@@ -68,14 +68,6 @@ td {
     background-color: #ffffff;
 }
 
-/* tbody tr:nth-child(odd) {
-    background-color: #FFF0E1;
-} */
-
-#consoles-table tbody tr td:nth-child(2) {
-    text-align: center;
-}
-
 #media-container {
     grid-column: 1 / -1;
     display: grid;
@@ -98,25 +90,25 @@ td {
     background-color: white;
 }
 
-#svg_logo_nintendo:hover {
-    animation: moverY 3s forwards;
+#svg-logo-nintendo-interaction:hover {
+    animation: moveY 3s forwards;
 }
 
-#svg_logo_mario:hover {
-    animation: girar 3s forwards;
+#svg-logo-mario-interaction:hover {
+    animation: spin 3s forwards;
 }
 
-#svg_logo_pokemon:hover {
-    animation: moverY 5s forwards;
+#svg-logo-pokemon-interaction:hover {
+    animation: moveY 5s forwards;
 }
 
-@keyframes moverY {
+@keyframes moveY {
     50% {
         transform: translateY(-100px);
     }
 }
 
-@keyframes girar {
+@keyframes spin {
     50% {
         transform: rotate(360deg);
     }
