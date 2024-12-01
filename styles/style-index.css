@@ -153,10 +153,10 @@ main {
   fill: rgb(255, 255, 255);
   stroke: black;
   stroke-width: 1;
-  animation: moverY 1s forwards;
+  animation: moveY 1s forwards;
 }
 
-@keyframes moverY {
+@keyframes moveY {
   0% {
     transform: scale(1);
   }
