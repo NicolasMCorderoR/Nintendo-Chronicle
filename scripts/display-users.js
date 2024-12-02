@@ -1,27 +1,29 @@
-document.addEventListener('DOMContentLoaded', function() {
-    let users = JSON.parse(localStorage.getItem('users')) || [];
+document.addEventListener("DOMContentLoaded", function () {
+  let users = JSON.parse(localStorage.getItem("users")) || [];
 
-    const userList = document.querySelector('#user-list');
+  const userList = document.querySelector("#user-list");
 
-    users.forEach(function(user) {
-        let listItem = document.createElement('li');
-        
-        listItem.textContent = `Nombre: ${user.name}, Correo Electrónico: ${user.email}`;
+  users.forEach(function (user) {
+    let listItem = document.createElement("li");
 
-        let messageList = document.createElement('ol');
+    listItem.textContent = `Nombre: ${user.name}, Correo Electrónico: ${user.email}`;
 
-        user.messages.forEach(function(message) {
-            let messageItem = document.createElement('li');
-            messageItem.textContent = `Mensaje: ${message}`;
-            messageList.appendChild(messageItem);
-        });
+    let messageList = document.createElement("ol");
 
-        listItem.appendChild(messageList);
-
-        userList.appendChild(listItem);
+    user.messages.forEach(function (message) {
+      let messageItem = document.createElement("li");
+      messageItem.textContent = `Mensaje: ${message}`;
+      messageList.appendChild(messageItem);
     });
 
-    document.querySelector('#button-return').addEventListener('click', function() {
-        window.location.href = './contact.html';
+    listItem.appendChild(messageList);
+
+    userList.appendChild(listItem);
+  });
+
+  document
+    .querySelector("#button-return")
+    .addEventListener("click", function () {
+      window.location.href = "./contact.html";
     });
 });
